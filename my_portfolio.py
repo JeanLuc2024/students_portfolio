@@ -10,7 +10,7 @@ if "profile" not in st.session_state:
         "location": "Musanze, Rwanda",
         "field_of_study": "Software Engineering, Year 3",
         "university": "INES Ruhengeri",
-        "about_me": "I am a Computer Science Student with interest in Website Development and Data Mining."
+        "about_me": "I am a Software Engineering Student with interest in Website Development and Data Mining."
     }
 
 # Sidebar Navigation
