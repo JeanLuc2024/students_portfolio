@@ -21,7 +21,7 @@ page = st.sidebar.radio("Go to", ["Home", "Projects", "Skills", "Testimonials", 
 if page == "Home":
     st.title("🎓 My Digital Footprint – Showcasing My Journey")
 
-    st.image("1.png", width=150, caption="Profile Picture")
+    st.image("AI/1.png", width=150, caption="Profile Picture")
 
     with st.form("edit_profile"):
         st.session_state.profile["name"] = st.text_input("👤 Name", st.session_state.profile["name"])
@@ -43,7 +43,7 @@ if page == "Home":
 
     # Download resume
     try:
-        with open("resume1.pdf", "rb") as file:
+        with open("AI/resume1.pdf", "rb") as file:
             resume_bytes = file.read()
         st.download_button(label="📄 Download Resume", data=resume_bytes, file_name="resume1.pdf", mime="application/pdf")
     except FileNotFoundError:
