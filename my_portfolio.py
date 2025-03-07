@@ -21,7 +21,7 @@ page = st.sidebar.radio("Go to", ["Home", "Projects", "Skills", "Testimonials", 
 if page == "Home":
     st.title("🎓 My Digital Footprint – Showcasing My Journey")
 
-    st.image("1.png", width=150, caption="Profile Picture")
+    st.image("quan.png", width=150, caption="Profile Picture")
 
     with st.form("edit_profile"):
         st.session_state.profile["name"] = st.text_input("👤 Name", st.session_state.profile["name"])
