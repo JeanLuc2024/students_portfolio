@@ -43,9 +43,9 @@ if page == "Home":
 
     # Download resume
     try:
-        with open("AI/resume1.pdf", "rb") as file:
+        with open("resume.pdf", "rb") as file:
             resume_bytes = file.read()
-        st.download_button(label="📄 Download Resume", data=resume_bytes, file_name="resume1.pdf", mime="application/pdf")
+        st.download_button(label="📄 Download Resume", data=resume_bytes, file_name="resume.pdf", mime="application/pdf")
     except FileNotFoundError:
         st.warning("⚠ Resume file not found. Please upload your resume.")
 
